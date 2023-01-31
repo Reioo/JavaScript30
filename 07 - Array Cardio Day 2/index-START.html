@@ -31,7 +31,7 @@
         return true;
       }
     } );
-    console.log(isAdult);
+    // console.log(isAdult);
     // Array.prototype.every() // is everyone 19 or older?
    
     // const isEveryoneAdult = people.every((person) => {
@@ -42,7 +42,7 @@
     // });
       const allAdult = people.every((person) => ((new Date()).getFullYear) - person.year >= 19);
 
-    console.log();
+    // console.log();
 
 
     // Array.prototype.find()
@@ -53,12 +53,17 @@
         return true;
       }
     });
-    console.table(findId);
-
+    // console.table(findId);
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
+    
+    const index = comments.findIndex((comment) => comment.id ===
+     823423);
+     console.log(index);
     // delete the comment with the ID of 823423
+    comments.splice(index, 1);
+
 
   </script>
 </body>
